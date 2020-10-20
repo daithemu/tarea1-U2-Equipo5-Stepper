@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <title>Wizard for Ionic</title>
     <meta charset="UTF-8">
@@ -14,72 +15,130 @@
     <link href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
 
     <nav>
-		<ul>
-			<p>Instalación de Ionic</p>
-		</ul>
+
+        <p>Instalación de Ionic</p>
+
+
     </nav>
-    
+
 </head>
+
 <body>
-<br>
-<br>
+    <br>
+
+    <style>
+        p {
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: "Lucida Console";
+            color: white;
+        }
+        
+        h3 {
+            color: yellow;
+            font-family: "Lucida Console";
+        }
+        
+        #ionic {
+            color: #3F9CE9
+        }
+        
+        .nav-link {
+            color: whitesmoke;
+        }
+        
+        nav {
+            background-color: black;
+            color: whitesmoke;
+            font-family: "Lucida Console";
+            border-radius: 20px;
+        }
+        
+        html {
+            background-color: rgb(99, 33, 43);
+        }
+        
+        #smartwizard {
+            background-color: rgb(50, 10, 36);
+            text-align: center;
+            border-width: 0px;
+        }
+        
+        .nav-link {
+            background-color: rgb(66, 58, 56);
+            color: white;
+        }
+        
+        #bar {
+            background-color: seagreen;
+        }
+        
+        a {
+            font-family: "Lucida Console";
+        }
+    </style>
 
     <div id="smartwizard">
         <ul class="nav">
-           <li>
-               <a class="nav-link" href="#step-1">
+            <li>
+                <a class="nav-link" href="#step-1">
                   Paso 1
                </a>
-           </li>
-           <li>
-               <a class="nav-link" href="#step-2">
+            </li>
+            <li>
+                <a class="nav-link" href="#step-2">
                   Paso 2
                </a>
-           </li>
-           <li>
-               <a class="nav-link" href="#step-3">
+            </li>
+            <li>
+                <a class="nav-link" href="#step-3">
                   Paso 3
                </a>
-           </li>
-           <li>
-               <a class="nav-link" href="#step-4">
+            </li>
+            <li>
+                <a class="nav-link" href="#step-4">
                   Paso 4
                </a>
-           </li>
+            </li>
         </ul>
-     
+        <div id="bar">
+            <H1></H1>
+        </div>
         <div class="tab-content">
-           <div id="step-1" class="tab-pane" role="tabpanel">
-              Actualizar npm
-              <br>
-              npm install -g npm
-           </div>
-           <div id="step-2" class="tab-pane" role="tabpanel">
-              Instalar Ionic
-              <br>
-              npm install -g @ionic/cli
-           </div>
-           <div id="step-3" class="tab-pane" role="tabpanel">
-              En PowerShell ejecutar
-              <br>
-              ionic init
-           </div>
-           <div id="step-4" class="tab-pane" role="tabpanel">
-             Elegir el tipo de aplicación y nombrar la app
-           </div>
+            <div id="step-1" class="tab-pane" role="tabpanel">
+
+                <h1>Actualizar npm</h1>
+                <h3 style="color: greenyellow;"> $ npm install -g npm</h3>
+            </div>
+            <div id="step-2" class="tab-pane" role="tabpanel">
+                <h1>Instalar Ionic</h1>
+                <h3 style="color: greenyellow;"> $ npm install -g @ionic/cli</h3>
+            </div>
+            <div id="step-3" class="tab-pane" role="tabpanel">
+                <h1>En PowerShell ejecutar</h1>
+                <h3 style="color: greenyellow;"> $ ionic init</br>
+            </div>
+            <div id="step-4" class="tab-pane" role="tabpanel">
+                <h1>Elegir el tipo de aplicación y nombrar la app</h1>
+                <br></br>
+            </div>
         </div>
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
-    
+
     <script>
-    $(document).ready(function(){
-     
-        // SmartWizard initialize
-        $('#smartwizard').smartWizard();
-       
-      });
+        $(document).ready(function() {
+
+            // SmartWizard initialize
+            $('#smartwizard').smartWizard();
+
+        });
     </script>
 </body>
+
 </html>
